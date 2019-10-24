@@ -23,7 +23,9 @@ abstract class BaseResponse
     {
         $xmlReader = new \XMLReader();
         $isXml = $xmlReader->XML($content);
-        if ($isXml === FALSE) {
+        $xml_parser = xml_parser_create();
+        $res = xml_parse($xml_parser,$content,true);
+        if (!$res || $isXml === FALSE) {
             throw new MnsException($this->statusCode, $content);
         }
         try {

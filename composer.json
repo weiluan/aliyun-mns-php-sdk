@@ -1,5 +1,5 @@
 {
-    "name": "ikecin/aliyun-mns-php-sdk",
+    "name": "liushen/aliyun-mns-php-sdk",
     "description": "PHP SDK of MNS(Message Service) for composer",
     "keywords": ["aliyun", "mns"],
     "authors": [
