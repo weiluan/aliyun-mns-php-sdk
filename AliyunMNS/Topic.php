@@ -36,6 +36,7 @@ class Topic
 
     public function getTopicName()
     {
+        // test
         return $this->topicName;
     }
 
